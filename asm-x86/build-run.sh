@@ -18,7 +18,7 @@ cd $chosen_dir
 mkdir -p build
 
 echo "Compiling using GAS"
-as main.s -o build/main.o
+as main.asm -o build/main.o
 exit_code="$?"
 if [[ $exit_code != 0 ]]; then
     echo "Did not compile"
